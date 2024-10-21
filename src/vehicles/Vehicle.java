@@ -1,6 +1,6 @@
 package vehicles;
 
-import mathematicaloperations.Vehicles;
+
 
 public class Vehicle {
 	String modelName;
