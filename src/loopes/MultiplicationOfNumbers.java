@@ -3,7 +3,7 @@ package loopes;
 public class MultiplicationOfNumbers {
 
 	public static void main(String[] args) {
-		int m = 2;
+		int m = 3;
 		int i = 1;
 		int multiplication = 1;
 		while(i<=m) {
