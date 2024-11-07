@@ -22,5 +22,6 @@ public class Grade {
 			System.out.println("Result : Fail");
 		}
 	}
+	
 
 }

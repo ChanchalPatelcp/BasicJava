@@ -11,5 +11,9 @@ public class NestedLoops {
 		}
 		
 	}
+	
+	public void method1() {
+		
+	}
 
 }
