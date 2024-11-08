@@ -21,6 +21,7 @@ public class Implicit {
 		c=(char) b;
 		d=f;
 		
+		
 		System.out.println(s+" "+i+" "+d+" "+c);
 		
 				
