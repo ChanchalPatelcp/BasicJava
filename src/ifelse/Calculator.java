@@ -10,7 +10,7 @@ public class Calculator {
 		int num1 = sc.nextInt();
 		int num2 = sc.nextInt();
 
-		System.out.println("Choose oprations : \n 1: Add\n 2: Substract \n 3 : multiply\n 4 : divide ");
+		System.out.println("Choose oprations : \n 1: Add\n 2: Substract \n 3 : multiply\n 4 : divide /n 5:exit");
 		int operation = sc.nextInt();
 
 //		if(operation == 1) {
@@ -28,25 +28,31 @@ public class Calculator {
 //		}else {
 //			System.out.println("Invalid Operations");
 //		}
+		
+		Loop:
+		while (true) {
+			switch (operation) {
 
-		switch (operation) {
+			case 1:
+				System.out.println(num1 + "+" + num2 + "=" + (num1 + num2));
+				break;
+			case 2:
+				System.out.println(num1 + "-" + num2 + "=" + (num1 - num2));
+				break;
+			case 3:
+				System.out.println(num1 + "*" + num2 + "=" + (num1 * num2));
+				break;
+			case 4:
+				System.out.println(num1 + "/" + num2 + "=" + (num1 / num2));
+				break;
+			case 5: break Loop;
+			default:
+				System.out.println("Invalid Operations");
 
-		case 1:
-			System.out.println(num1 + "+" + num2 + "=" + (num1 + num2));
-			break;
-		case 2:
-			System.out.println(num1 + "-" + num2 + "=" + (num1 - num2));
-			break;
-		case 3:
-			System.out.println(num1 + "*" + num2 + "=" + (num1 * num2));
-			break;
-		case 4:
-			System.out.println(num1 + "/" + num2 + "=" + (num1 / num2));
-			break;
-		default:
-			System.out.println("Invalid Operations");
-
+			}
+			
+			System.out.println("Choose oprations : \n 1: Add\n 2: Substract \n 3 : multiply\n 4 : divide /n 5:exit");
+			operation = sc.nextInt();
 		}
-
 	}
 }
