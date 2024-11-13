@@ -9,21 +9,31 @@ public class While {
 			System.out.println("Enter the num : ");
 			int num = sc.nextInt();
 	
-		while(num>=1 && num <=10) {
-			System.out.println(num);
-			num++;
-		
-		}
-		 do {
-			 System.out.println(num);
-			 num+=5;
-			 
-		 }while(num>=1 && num<=20);
-		 
-		 for( num = 10 ;num <=100;num+=10) {
-			 System.out.println(num);
-			 
-		 }
+//		while(num>=1 && num <=10) {
+//			System.out.println(num);
+//			num++;
+//		
+//		}
+//		 do {
+//			 System.out.println(num);
+//			 num+=5;
+//			 
+//		 }while(num>=1 && num<=20);
+//		 
+//		 for( num = 10 ;num <=100;num+=10) {
+//			 System.out.println(num);
+//			 
+//		 }
+			int i =0;
+			
+			do {
+				i++;
+			}while(i<num);
+			
+			System.out.println("i= "+i);
+			
+			
+			
 		 
 	
 	}

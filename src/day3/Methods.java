@@ -28,7 +28,7 @@ public class Methods {
 	}
 	//return something take something
 	static int method3(int a,int b) {
-		 
-		return a*b;
+		 int c=a*b;
+		return c;
 	}
 }

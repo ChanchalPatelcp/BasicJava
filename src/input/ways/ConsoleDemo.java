@@ -6,17 +6,32 @@ public class ConsoleDemo {
 //	                        2) readPassword : return array of character
 	
 	public static void main(String[] args) {
-		Console cs = System.console();
+		practice(2);
 		
-		System.out.println("Enter name :");
-		String name = cs.readLine();
-		System.out.println("Enter Password : ");
-		
-		char[] password = cs.readPassword();
-		
-		System.out.println("Name = "+name);
-		System.out.println("Password = "+password);
-		System.out.println(String.valueOf(password));
+//		Console cs = System.console();
+//		
+//		System.out.println("Enter name :");
+//		String name = cs.readLine();
+//		System.out.println("Enter Password : ");
+//		
+//		char[] password = cs.readPassword();
+//		
+//		System.out.println("Name = "+name);
+//		System.out.println("Password = "+password);
+//		System.out.println(String.valueOf(password));
+	
 	}
+	public static void practice(int a) {
+		Console cl =System.console();
+		String s = cl.readLine();
+		char[] c = cl.readPassword();
+		
+		System.out.println(s + "  "+c);
+	}
+	
+	
+	
+
 
 }
+
