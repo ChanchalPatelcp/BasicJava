@@ -21,6 +21,7 @@ public class Table {
 			System.out.print(num[i] + " ");
 
 		}
+	
 
 	}
 
