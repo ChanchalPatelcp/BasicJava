@@ -6,8 +6,8 @@ public class SolutionOfAssignment {
 
 	public static void main(String[] args) {
 		SolutionOfAssignment SA = new SolutionOfAssignment();
-		SA.comparision();
-		
+//		SA.comparision();
+		SA.powerDemo();
 	}
 	public void comparision() {
 		Scanner sc = new Scanner(System.in);
@@ -24,6 +24,31 @@ public class SolutionOfAssignment {
 			System.out.println(num3+" is smallest");
 		}
 	}
+	public void powerDemo() {
+	
+		        Scanner sc = new Scanner(System.in);
+		     
+		        int base;
+		        int power;
+		        int result = 1;
+		        
+		        System.out.print("Enter the base number : ");
+		        base = sc.nextInt();
+		        
+		        System.out.print("Enter the power : ");
+		        power = sc.nextInt();
+
+		        for(int i = 1; i <= power; i++)
+		        {
+			    result *= base;
+		        }
+
+		        System.out.println("Result: "+ result);
+		       
+		       
+		    }
+		
+	
 	
 
 
