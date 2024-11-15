@@ -6,8 +6,9 @@ public class SolutionOfAssignment {
 
 	public static void main(String[] args) {
 		SolutionOfAssignment SA = new SolutionOfAssignment();
-//		SA.comparision();
+		SA.comparision();
 		SA.powerDemo();
+		factorial();
 	}
 	public void comparision() {
 		Scanner sc = new Scanner(System.in);
@@ -47,6 +48,18 @@ public class SolutionOfAssignment {
 		       
 		       
 		    }
+	public static void factorial() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a number : ");
+		int num = sc.nextInt();
+		int fact = 1;
+		for(int i =1;i<=num;i++) {
+			fact = fact*i;
+		}
+		System.out.print("Factorial of "+num+" : "+fact);
+		
+		
+	}
 		
 	
 	
