@@ -6,7 +6,7 @@ public class PrintMiddleElement {
 
 	public static void main(String[] args) {
 		//print middle element of single array
-//		singleDimention();
+		singleDimention();
 		multiDimention();
 	}
 
