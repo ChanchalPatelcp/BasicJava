@@ -2,7 +2,7 @@ package array;
 
 import java.util.Scanner;
 
-public class AdditionOfMetrix {
+public class AdditionAndSubstraction {
 
 	public static void main(String[] args) {
 		Addition(2);
