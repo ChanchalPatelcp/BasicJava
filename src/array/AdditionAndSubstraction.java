@@ -61,9 +61,11 @@ public class AdditionAndSubstraction {
 			
 		}
 		System.out.println("Substraction of Matrix1 and Matrix2 is : ");
+		int matrix[][] = new int[arr1.length][arr1[0].length] ;
 		for(int i=0;i<size;i++) {
 			for(int j=0;j<size;j++) {
-				System.out.print(arr[i][j] - arr1[i][j]+" ");
+				 matrix[i][j] = arr[i][j] - arr1[i][j];
+				System.out.print(matrix[i][j]+" ");
 			}
 			System.out.println();
 		}
