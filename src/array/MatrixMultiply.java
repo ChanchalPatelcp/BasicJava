@@ -39,7 +39,7 @@ public class MatrixMultiply {
 		System.out.println("Multiplication of Matrix A and Matrix B is : ");
 		for(int i=0;i<row1;i++) {
 			for(int j=0;j<col2;j++) {
-				c[i][j] = 0;
+				c[i][j] = 0; // temp=0
 				for(int k=0;k<row2;k++) {
 					c[i][j] = c[i][j] + mat1[i][k]*mat2[k][j];
 				}
