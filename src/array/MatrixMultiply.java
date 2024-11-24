@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class MatrixMultiply {
 
 	public static void main(String[] args) {
-		multiply();
-
+//		multiply();
+		division();
 	}
 	public static void multiply() {
 		Scanner sc = new Scanner(System.in);
@@ -53,7 +53,16 @@ public class MatrixMultiply {
 	
 	}
 	public static void division() {
+		int arr[][] = {{3,2},{3,4}};
+		int arr1[][] = {{4,3},{2,6}};
 		
+		for(int i=0;i<arr.length;i++) {
+			for(int j =0;j<arr1.length;j++) {
+				System.out.print(arr[i][j]/arr1[i][j]);
+			}
+			System.out.println();
+		}
+	
 	}
 
 }
