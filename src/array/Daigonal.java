@@ -21,12 +21,15 @@ public class Daigonal {
 			}
 		}
 		System.out.print("Daigonal Elements are : ");
+//		for(int i=0;i<Size;i++) {
+//			for(int j =0;j<Size;j++) {
+//				if(i==j) {
+//				System.out.print(arr[i][j]+",");
+//				}
+//			}
+//		}
 		for(int i=0;i<Size;i++) {
-			for(int j =0;j<Size;j++) {
-				if(i==j) {
-				System.out.print(arr[i][j]+",");
-				}
-			}
+				System.out.print(arr[i][i]+",");
 		}
 		
 		
