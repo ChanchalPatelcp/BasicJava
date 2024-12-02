@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class Revisionjava {
 
 	public static void main(String[] args) {
-		ifElse();	
+		ifElse();
+		System.out.println();
+		operators();
 
 	}
 	public static void ifElse() {
@@ -19,6 +21,13 @@ public class Revisionjava {
 			System.out.print(num+" is odd number.");
 		}
 		
+	}
+	public static void operators() {
+		int a=4;
+		int b=2;
+		
+		System.out.println(a+b);
+		System.out.print(a-b);
 	}
 
 }
