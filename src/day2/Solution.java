@@ -2,7 +2,9 @@ package day2;
 
 public class Solution {
 	public static void main(String []args) {
+		
 		isPalindrome();
+		System.out.println(strs());
 
 	}
 	  public static void isPalindrome() {
@@ -27,5 +29,9 @@ public class Solution {
 			
 	        
 	    }
+	  public static String strs() {
+		  String s = "chanchal";
+		  return s;
+	  }
 
 }
