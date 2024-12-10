@@ -9,6 +9,7 @@ public class LeetCode {
 	}
 	public void num() {
 		System.out.println("Only For Git");
+		System.out.println("Hello Java !");
 		
 	}
 
