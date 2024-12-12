@@ -44,7 +44,7 @@ public class LeetCode {
 
 	}
 	public static void deleteDuplicate() {
-		int[] list = {1,1,2,2,3,6,5,3,6,5};
+		int[] list = {1,1,2,2,3,3,4,4,5};
 		int k =1;
 		for(int i =1;i<list.length;i++) {
 			if(list[i]!=list[i-1]) {
@@ -53,7 +53,7 @@ public class LeetCode {
 			}
 			
 	    }
-		System.out.println(list[k]);
+		System.out.println(k);
 	
 		
 			
