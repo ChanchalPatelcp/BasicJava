@@ -7,7 +7,7 @@ public class LeetCode {
 
 	public static void main(String[] args) {
 		plusOne();
-//		deleteDuplicate();
+		deleteDuplicate();
 
 	}
 
@@ -42,6 +42,38 @@ public class LeetCode {
 		for(int i =0;i<size;i++) {
 		System.out.print(newDigit[i]+",");
 	}
+	}
+	public static void mergeArray() {
+		int[] arr1 = {1,2,3};
+		int[] arr2 = {2,4,5};
+		
+		int c1=0;
+		int c2 =0;
+		int k=0;
+		int[] res = new int[6];
+		
+		while(true) {
+			if(arr1[c1]<arr2[c2]) {
+				res[k] = arr1[c1];
+				c1++;
+				k++;
+			}
+			else if(arr1[c1]>arr2[c2]) {
+				res[k] = arr2[c2];
+				c2++;
+				k++;
+			}
+			
+			
+		}
+		
+		
+		for( int j = 0;j<6;j++) {
+			
+		
+		System.out.println(res[j]);
+		}
+		
 	}
 	
 
