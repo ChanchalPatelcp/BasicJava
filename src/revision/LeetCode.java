@@ -6,8 +6,9 @@ public class LeetCode {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		plusOne();
-		deleteDuplicate();
+//		plusOne();
+//		deleteDuplicate();
+		mergeArray();
 
 	}
 
@@ -45,14 +46,14 @@ public class LeetCode {
 	}
 	public static void mergeArray() {
 		int[] arr1 = {1,2,3};
-		int[] arr2 = {2,4,5};
+		int[] arr2 = {4,5,7};
 		
 		int c1=0;
 		int c2 =0;
 		int k=0;
 		int[] res = new int[6];
 		
-		while(true) {
+		for(int i=0;i<6;i++){
 			if(arr1[c1]<arr2[c2]) {
 				res[k] = arr1[c1];
 				c1++;
@@ -63,18 +64,30 @@ public class LeetCode {
 				c2++;
 				k++;
 			}
+			if(c1==2) {
+				for(i = c2;i<3;i++) {
+					res[k]=arr2[c2];
+				}
+				
+			}
+			else if(c2==2) {
+				for( i = c1;i<3;i++) {
+					res[k]=arr2[c1];
+				}
+				
+			}
 			
 			
 		}
 		
-		
-		for( int j = 0;j<6;j++) {
+		for( k=0;k<6;k++) {
 			
+		System.out.println(res[k]);
 		
-		System.out.println(res[j]);
-		}
+	
 		
 	}
 	
-
+	
+}
 }
