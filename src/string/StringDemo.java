@@ -6,7 +6,7 @@ public class StringDemo {
 
 		char[] ch = { 'g', 'j', 'k' };
 		String str = "gjk";
-		String str2 = "gjn";
+		String str2 = "   gjn";
 		String str1 = new String(ch);
 
 //			str = "chanchal";
