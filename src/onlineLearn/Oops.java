@@ -38,4 +38,7 @@ class Oops {
 //		s1.getData("Chanchal", 20, "Bhagwat Patel");
 //		s1.print();
 //	}
+ public static void oops() {
+	 System.out.println("hello");
+ }
 }
