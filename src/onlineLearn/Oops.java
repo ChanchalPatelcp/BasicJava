@@ -19,6 +19,7 @@ class Oops {
 	 s1.fatherName = "Mr. Bhagwat Patel";
 	 
 	 s1.print();
+	 s1.oops();
 	 
  }
 	// without this
@@ -40,5 +41,6 @@ class Oops {
 //	}
  public static void oops() {
 	 System.out.println("hello");
+	 System.out.println("java");
  }
 }
