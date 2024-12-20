@@ -26,7 +26,7 @@ public class PrimeNumber {
 
 	public void isPrime(int num) {
 
-		// step 1 : take a another variable2 intilize 2
+		// step 1 : take a another variable2 initialize 2
 		// step 2 : divide a variable1 with new variable2
 		// step 3 : if reminder is equals to zero then print not a prime number end the
 		// program
