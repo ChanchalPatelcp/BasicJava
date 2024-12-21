@@ -1,12 +1,39 @@
 package loopes;
+
 import java.util.Scanner;
+
 public class Fibonacci {
-	
-	
+	static Scanner scan = new Scanner(System.in);
+
 	// 0 1 1 2 3 5 8 13 21 34
 
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
+//		fibonacci();
+//		fibonacci1();
+		countDigits();
+
+
+	}
+//in simple way 
+	public static void fibonacci() {
+		System.out.print("Enter a limit of Fabonacci series : ");
+		int num = scan.nextInt();
+		int k = 0;
+		int j = 1;
+		int c;
+
+		for (int i = 1; i <= num; i++) {
+
+			System.out.print(k + ",");
+			c = k + j;
+			k = j;
+			j = c;
+
+		}
+	
+	}
+	// by another method
+	public static void fibonacci1() {
 		int prev = scan.nextInt();
 		if(prev==1) {
 			System.out.println(0);
@@ -27,9 +54,25 @@ public class Fibonacci {
 		}
 		
 	}
-	
+	public static void countDigits() {
+		System.out.println("Enter numbers : ");
+		long num = scan.nextLong();
+		int dig =0;
+		while(num!=0) {
+			num=num/10;
+			dig++;
+		}
+		System.out.println("The number of Digits in given Number is "+dig);
 		
-
+		
+	}
+	public static void digitsOfNumber() {
+		System.out.println("Enter a Number : ");
+		int n=scan.nextInt();
+		
+	}
+	
+	
 	
 
 }

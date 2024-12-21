@@ -6,7 +6,7 @@ public class Prime {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		//prime();
+		 prime();
 		printPrime();
 
 	}
@@ -36,25 +36,23 @@ public class Prime {
 		System.out.print("Enter Last Number : ");
 		int high = sc.nextInt();
 
-		int count = 0;
 		int j;
-		int num = 0;
+
 		for (int i = low; i <= high; i++) {
-			for (j = 2; j < i; j++) {
+			int count = 0;
+			for (j = 2; j * j <= i; j++) {
 				if (i % j == 0) {
 					count++;
 					break;
 				}
 
 			}
-			if (count==0) {
-				num = i;
-				System.out.println(num);
+			if (count == 0) {
+				System.out.println(i);
 
 			}
 
 		}
-		System.out.println(num);
 
 	}
 
