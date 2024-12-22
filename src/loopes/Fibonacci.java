@@ -98,5 +98,8 @@ public class Fibonacci {
 		}
 
 	}
+	public static void inverseOfNum() {
+		
+	}
 
 }
