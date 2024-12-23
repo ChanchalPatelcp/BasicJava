@@ -112,5 +112,6 @@ public class Number {
 		System.out.println("After Rotatation by "+k+" the Number become " +rotateNum);
 
 	}
+	
 
 }
