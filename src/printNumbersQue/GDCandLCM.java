@@ -7,7 +7,9 @@ public class GDCandLCM {
 
 	public static void main(String[] args) {
 		// printLCMandGDC();
-		FactPrimeNum();
+		// FactPrimeNum();
+//		pythagorous();
+		bulbOn();
 	}
 
 	public static void printLCMandGDC() {
@@ -46,6 +48,44 @@ public class GDCandLCM {
 			}
 		}
 
+	}
+
+	public static void pythagorous() {
+		System.out.print("Enter three integers : ");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		int d;
+
+		if (a > b && a > c) {
+			d = a;
+			a = b;
+			b = c;
+		} else if (b > a && b > c) {
+			d = b;
+			b = a;
+			a = c;
+		} else {
+			d = c;
+
+		}
+
+		int H = d * d;
+
+		int PB = a * a + b * b;
+
+		if (H == PB) {
+			System.out.print("Hence its satisfying the Pythagorous Theorem.Therefore its a Right Angle Triangle");
+		} else {
+			System.out.println("It doesnt satisfy Pythagorous Theorem.Therefore its not a Right Angle Triangle");
+		}
+
+	}
+	public static void bulbOn() {
+		int n = sc.nextInt();
+		for(int i =1;i<=n;i++) {
+			System.out.println(i*i);
+		}
 	}
 
 }
