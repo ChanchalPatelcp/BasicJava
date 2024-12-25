@@ -122,5 +122,8 @@ public class StarPattern {
 			System.out.println();
 		}
 	}
+	public static void spaceDiamond() {
+		
+	}
 
 }
