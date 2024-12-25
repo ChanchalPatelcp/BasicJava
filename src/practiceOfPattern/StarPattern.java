@@ -123,6 +123,13 @@ public class StarPattern {
 		}
 	}
 	public static void spaceDiamond() {
+		System.out.println("Enter a Number : ");
+		int n = sc.nextInt();
+		
+		for(int i =1;i<=n;i++) {
+			
+		}
+			
 		
 	}
 
