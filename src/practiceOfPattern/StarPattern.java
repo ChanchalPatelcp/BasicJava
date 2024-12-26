@@ -11,7 +11,7 @@ public class StarPattern {
 //		left();
 //		reverse1();
 //		diamond();
-		shortCodeDiamond();
+		daigonal();
 	}
 
 	public static void right() {
@@ -71,6 +71,13 @@ public class StarPattern {
 	}
 
 	public static void diamond() {
+		/*
+		         *
+		       * * *
+		     * * * * *
+		       * * *
+		         *
+		 */
 		System.out.println("Enter a Num :");
 		int n = sc.nextInt();
 
@@ -122,11 +129,27 @@ public class StarPattern {
 			System.out.println();
 		}
 	}
-	public static void spaceDiamond() {
+	public static void daigonal() {
+		/*
+		 * 
+		    *
+		       *
+		          *
+		             *
+		*/
+		
 		System.out.println("Enter a Number : ");
 		int n = sc.nextInt();
 		
 		for(int i =1;i<=n;i++) {
+			for(int j=1;j<=i;j++) {
+				if(i==j) {
+					System.out.print("*\t");
+				}else {
+					System.out.print("\t");
+				}
+			}
+			System.out.println();
 			
 		}
 			
