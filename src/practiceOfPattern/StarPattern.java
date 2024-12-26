@@ -75,11 +75,9 @@ public class StarPattern {
 
 	public static void diamond() {
 		/*
-		         *
-		       * * *
-		     * * * * *
-		       * * *
-		         *
+		 *
+		 * * * * * * * * *
+		 *
 		 */
 		System.out.println("Enter a Num :");
 		int n = sc.nextInt();
@@ -132,6 +130,7 @@ public class StarPattern {
 			System.out.println();
 		}
 	}
+
 	public static void daigonal() {
 		/*
 		 * 
@@ -140,24 +139,24 @@ public class StarPattern {
 		          *
 		             *
 		*/
-		
+
 		System.out.println("Enter a Number : ");
 		int n = sc.nextInt();
-		
-		for(int i =1;i<=n;i++) {
-			for(int j=1;j<=i;j++) {
-				if(i==j) {
+
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= i; j++) {
+				if (i == j) {
 					System.out.print("*\t");
-				}else {
+				} else {
 					System.out.print("\t");
 				}
 			}
 			System.out.println();
-			
+
 		}
-			
-		
+
 	}
+
 	public static void oppositeDaigonal() {
 		/*
 		            *
@@ -167,56 +166,75 @@ public class StarPattern {
 		    *
 		    
 		*/
-		
+
 		System.out.println("Enter a Number : ");
 		int n = sc.nextInt();
-		
-		for(int i =5;i>=1;i--) {
-			for(int j=1;j<=i;j++) {
-				if(i==j) {
+
+		for (int i = 5; i >= 1; i--) {
+			for (int j = 1; j <= i; j++) {
+				if (i == j) {
 					System.out.print("*\t");
-				}else {
+				} else {
 					System.out.print("\t");
 				}
 			}
 			System.out.println();
-			
+
 		}
-			
-		
+
 	}
+
 	public static void xPrint() {
 		/*
-		 *           *
-		    *     *
-		       *
-		    *     *
-		 *           *
-		*/
-		
+		 * * *
+		 *
+		 * * *
+		 */
+
 		System.out.println("Enter a Number : ");
 		int n = sc.nextInt();
-		
-		for(int i=1;i<=n;i++){
-			for(int j=1;j<=n;j++){
-				if(i==j || i+j==n+1) {
+
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n; j++) {
+				if (i == j || i + j == n + 1) {
 					System.out.print("*\t");
-					
-				}else {
+
+				} else {
 					System.out.print("\t");
 				}
 			}
 			System.out.println();
 		}
-		
+
 	}
+
 	public static void hollowDiamond() {
 		int n = 5;
-		for(int i=1;i<=n;i++) {
-			
+		int os = n / 2;
+		int is = -1;
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= os; j++) {
+				System.out.print("\t");
+			}
+			System.out.print("*\t");
+			for (int j = 1; j <= is; j++) {
+				System.out.print("\t");
+			}
+			if (i >1 && i < n) {
+				System.out.print("*\t");
+			}
+			if (i <= n / 2) {
+				os--;
+				is += 2;
+			} else {
+				os++;
+				is -= 2;
+
+			}
+			System.out.println();
+
 		}
-		
+
 	}
-	
 
 }
