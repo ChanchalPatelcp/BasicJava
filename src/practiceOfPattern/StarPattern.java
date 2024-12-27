@@ -185,11 +185,7 @@ public class StarPattern {
 	}
 
 	public static void xPrint() {
-		/*
-		 * * *
-		 *
-		 * * *
-		 */
+		
 
 		System.out.println("Enter a Number : ");
 		int n = sc.nextInt();
