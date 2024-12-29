@@ -6,13 +6,15 @@ public class IntegerPatterns {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-//		left();
-//		fibonacci();
-//		table();
-//		diamond();
-//		vPrint();
-//		arrow();
+		left();
+		fibonacci();
+		table();
+		diamond();
+		vPrint();
+		arrow();
 		hourGlass();
+		swastik() ;
+		wPrint();
 
 	}
 
@@ -130,7 +132,7 @@ public class IntegerPatterns {
 		int str = 1;
 		for (int i = 1; i <= n; i++) {
 			for (int j = 1; j <= sp; j++) {
-				if (i == n/2+1) {
+				if (i == n / 2 + 1) {
 					System.out.print("*\t");
 				} else {
 					System.out.print("\t");
@@ -148,37 +150,111 @@ public class IntegerPatterns {
 
 		}
 	}
+
 	public static void hourGlass() {
 		System.out.println("Enter Number : ");
 		int n = sc.nextInt();
 		int str = n;
-		int sp=0;
-		for(int i =1;i<=n;i++) {
-			for(int j =1;j<=sp;j++) {
+		int sp = 0;
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= sp; j++) {
 				System.out.print("\t");
 			}
-			for(int j = 1;j<=str;j++) {
-				if(i>1 && i<=n/2 && j>1 && j<str) {
+			for (int j = 1; j <= str; j++) {
+				if (i > 1 && i <= n / 2 && j > 1 && j < str) {
 					System.out.print("\t");
-				}else {
+				} else {
 					System.out.print("*\t");
 				}
 			}
-			if(i<=n/2) {
+			if (i <= n / 2) {
 				sp++;
-				str-=2;
-			}else {
+				str -= 2;
+			} else {
 				sp--;
-				str+=2;
+				str += 2;
 			}
 			System.out.println();
-			
-			
-			
-			
+
 		}
-			
-		
+
+	}
+
+	public static void swastik() {
+		System.out.println("Enter Odd Number : ");
+		int n = sc.nextInt();
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n; j++) {
+				if (i == 1) {
+					if (j <= n / 2 + 1 || j == n) {
+						System.out.print("*\t");
+					} else {
+						System.out.print("\t");
+					}
+
+				} else if (i <= n / 2) {
+					if (j == n / 2 + 1 || j == n) {
+						System.out.print("*\t");
+					} else {
+						System.out.print("\t");
+					}
+
+				} else if (i == n / 2 + 1) {
+
+					System.out.print("*\t");
+
+				} else if (i < n) {
+					if (j == n / 2 + 1 || j == 1) {
+						System.out.print("*\t");
+					} else {
+						System.out.print("\t");
+					}
+
+				} else {
+					if (j >= n / 2 + 1 || j == 1) {
+						System.out.print("*\t");
+					} else {
+						System.out.print("\t");
+					}
+
+				}
+
+			}
+			System.out.println();
+		}
+	}
+
+	public static void wPrint() {
+
+		int n = 5;
+
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n; j++) {
+				if (i <= n / 2 || i == n) {
+					if (j == 1 || j == n) {
+						System.out.print("*\t");
+					} else {
+						System.out.print("\t");
+					}
+
+				} else if (i == n / 2 + 1) {
+					if (j == 1 || j == n || j == n / 2 + 1) {
+						System.out.print("*\t");
+					} else {
+						System.out.print("\t");
+					}
+
+				} else if (i < n) {
+					if (j < n / 2 + 1 || j > n / 2 + 1) {
+						System.out.print("*\t");
+					} else {
+						System.out.print("\t");
+					}
+
+				}
+			}
+			System.out.println();
+		}
 	}
 
 }
