@@ -27,5 +27,8 @@ public class DigitFrequency {
 		}
 		return count;
 	}
+	public static void numberSystem() {
+		
+	}
 
 }
