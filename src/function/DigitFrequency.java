@@ -28,7 +28,7 @@ public class DigitFrequency {
 		return count;
 	}
 	public static void numberSystem() {
-		
+		int n = sc.nextInt();
 	}
 
 }
