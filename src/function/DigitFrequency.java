@@ -29,6 +29,9 @@ public class DigitFrequency {
 	}
 	public static void numberSystem() {
 		int n = sc.nextInt();
+		for(int i =0;i<n;i++) {
+			
+		}
 	}
 
 }
