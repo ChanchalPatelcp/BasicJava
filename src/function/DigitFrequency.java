@@ -54,6 +54,9 @@ public class DigitFrequency {
 		}
 		return pow;
 	}
+	public static void anyBasetoAnyBase() {
+		
+	}
 	
 
 }
