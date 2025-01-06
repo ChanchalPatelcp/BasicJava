@@ -54,9 +54,16 @@ public class DigitFrequency {
 		}
 		return pow;
 	}
-	public static void anyBasetoAnyBase() {
+	public static void anyBasetoAnyBase(int n, int d) {
 		int p =1;
 		int pow =0;
+		while(n!=0) {
+			int rem = n%10;
+			 pow += rem * p;
+			p = p*d;
+			n = n / 10;
+		}
+		
 		
 		
 	}
