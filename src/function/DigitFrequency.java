@@ -63,6 +63,14 @@ public class DigitFrequency {
 			p = p*d;
 			n = n / 10;
 		}
+		 p = 1;
+		int dtb = 0;
+		while (n != 0) {
+			int rem = n % d;
+			dtb += rem * p;
+			p = p * 10;
+			n = n / d;
+		}
 		
 		
 		
