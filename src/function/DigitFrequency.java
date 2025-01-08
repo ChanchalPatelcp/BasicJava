@@ -71,6 +71,7 @@ public class DigitFrequency {
 			p = p * 10;
 			n = n / d;
 		}
+		System.out.println();
 		
 		
 		
