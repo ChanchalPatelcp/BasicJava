@@ -55,24 +55,8 @@ public class DigitFrequency {
 		return pow;
 	}
 	public static void anyBasetoAnyBase(int n, int d) {
-		int p =1;
-		int pow =0;
-		while(n!=0) {
-			int rem = n%10;
-			 pow += rem * p;
-			p = p*d;
-			n = n / 10;
-		}
-		 p = 1;
-		int dtb = 0;
-		while (n != 0) {
-			int rem = n % d;
-			dtb += rem * p;
-			p = p * 10;
-			n = n / d;
-		}
-		System.out.println(pow);
-		System.out.println(dtb);
+	
+		
 		
 		
 		
