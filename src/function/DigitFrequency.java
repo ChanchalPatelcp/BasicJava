@@ -55,6 +55,8 @@ public class DigitFrequency {
 		return pow;
 	}
 	public static void anyBasetoAnyBase(int n, int d) {
+		System.out.println(n);
+		System.out.println(d);
 	}
 	
 
