@@ -53,8 +53,12 @@ public class DigitFrequency {
 			n = n / 10;
 		}
 		return pow;
-	}
 	
+	}
+	public static  void psv() {
+		
+
+	}
 	
 
 }
