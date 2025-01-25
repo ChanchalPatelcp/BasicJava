@@ -56,7 +56,6 @@ public class DigitFrequency {
 	
 	}
 	public static  void psv() {
-		int a = 1;
 		
 
 	}
