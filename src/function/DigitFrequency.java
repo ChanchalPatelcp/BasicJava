@@ -56,7 +56,7 @@ public class DigitFrequency {
 	
 	}
 	public static  void psv() {
-		
+		System.out.println();
 
 	}
 	
