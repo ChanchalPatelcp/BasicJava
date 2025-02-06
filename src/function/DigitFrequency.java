@@ -55,10 +55,7 @@ public class DigitFrequency {
 		return pow;
 	
 	}
-	public static  void psv() {
-	
 
-	}
 	
 
 }
