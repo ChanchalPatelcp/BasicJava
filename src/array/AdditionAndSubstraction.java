@@ -68,6 +68,7 @@ public class AdditionAndSubstraction {
 				System.out.print(matrix[i][j]+" ");
 			}
 			System.out.println();
+			
 		}
 		
 	}

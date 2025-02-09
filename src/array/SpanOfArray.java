@@ -3,10 +3,10 @@ package array;
 public class SpanOfArray {
 
 	public static void main(String[] args) {
-		findmaxmin();
+	spanOfArray();
 
 	}
-	public static void findmaxmin() {
+	public static void spanOfArray() {
 		int[] arr = {87,56,89,76,32};
 		int max= arr[0] ;
 		int min = arr[0];
