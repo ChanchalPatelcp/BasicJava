@@ -45,7 +45,7 @@ public class SpanOfArray {
 			i++;
 		}
 		if (num == arr[i]) {
-			System.out.println("Intex of " + num + " is " + i);
+			System.out.println("Index of " + num + " is " + i);
 		}
 
 	}
