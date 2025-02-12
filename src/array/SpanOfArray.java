@@ -40,12 +40,12 @@ public class SpanOfArray {
 		}
 		System.out.print("Enter Element to be Find : ");
 		int num = sc.nextInt();
-		int i = 0;
-		while (num != arr[i]) {
-			i++;
+		int j= 0;
+		while (num != arr[j]) {
+			j++;
 		}
-		if (num == arr[i]) {
-			System.out.println("Index of " + num + " is " + i);
+		if (num == arr[j]) {
+			System.out.println("Index of " + num + " is " + j);
 		}
 
 	}
