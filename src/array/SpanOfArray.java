@@ -3,10 +3,12 @@ package array;
 import java.util.Scanner;
 
 public class SpanOfArray {
+	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
 //	spanOfArray();
-		findElement();
+//		findElement();
+		barChart();
 
 	}
 
@@ -30,12 +32,12 @@ public class SpanOfArray {
 	}
 
 	public static void findElement() {
-		Scanner sc = new Scanner(System.in);
+		
 		System.out.print("Enter Size of an Array : ");
 		int size = sc.nextInt();
 		int[] arr = new int[size];
 		System.out.println("Enter the Elements of an Array : ");
-		for (int i = 0; i < size; i++) {
+		for (int i = 0; i < arr.length; i++) {
 			arr[i] = sc.nextInt();
 		}
 		System.out.print("Enter Element to be Find : ");
@@ -48,6 +50,35 @@ public class SpanOfArray {
 			System.out.println("Index of " + num + " is " + i);
 		}
 
+	}
+	public static void barChart() {
+		System.out.println("Enter the size : ");
+		int size = sc.nextInt();
+		int []arr = new int [size];
+		System.out.println("Enter the elements of an array : ");
+		for(int i =0 ;i<size;i++) {
+			arr[i]=sc.nextInt();
+		}
+		
+		//for finding the max num 
+		int max = arr[0];
+		for(int i=1;i<arr.length;i++) {
+			if(arr[i]>max) {
+				max = arr[i];
+			}
+		}
+		// for printing the bar chart
+		for(int floor = max;floor>=1;floor--) {
+			for(int i =0;i<arr.length;i++) {
+				if(floor<=arr[i]) {
+					System.out.print("*\t");
+				}
+				else {
+					System.out.print("\t");
+				}
+			}
+			System.out.println();
+		}
 	}
 
 }
