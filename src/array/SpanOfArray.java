@@ -8,7 +8,8 @@ public class SpanOfArray {
 	public static void main(String[] args) {
 //	spanOfArray();
 //		findElement();
-		barChart();
+//		barChart();
+		sumOfTwoArray();
 
 	}
 
@@ -79,6 +80,42 @@ public class SpanOfArray {
 			}
 			System.out.println();
 		}
+	}
+	public static void sumOfTwoArray() {
+		System.out.println("Enter the size of Array 1 : ");
+		int n1 = sc.nextInt();
+		int []arr1 = new int [n1];
+		System.out.println("Enter Elements : ");
+		for(int i =0 ;i<n1;i++) {
+			arr1[i]=sc.nextInt();
+		}
+		
+		System.out.println("Enter the size of Array 2 : ");
+		int n2 = sc.nextInt();
+		int []arr2 = new int [n2];
+		System.out.println("Enter Elements : ");
+		for(int i =0 ;i<n2;i++) {
+			arr2[i]=sc.nextInt();
+		}
+		
+		int i = n1-1;
+		int j = n2-1;
+		int sum = 0;
+		System.out.println(i+"and"+j);
+		
+		while(i>=0 || j>=0) {
+			 sum = arr1[i] + arr2[j];
+			i--;
+			j--;
+			if(i<0) {
+				sum = arr2[j];
+			}
+			if(j<0) {
+				sum = arr1[i];
+			}
+			System.out.print(sum+"\t");
+		}
+		
 	}
 
 }
