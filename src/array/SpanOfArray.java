@@ -113,7 +113,7 @@ public class SpanOfArray {
 			if(j<0) {
 				sum = arr1[i];
 			}
-			System.out.print(sum+"\t");
+			System.out.print(sum+" ");
 		}
 		
 	}
